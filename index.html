@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nirmali BSDC - Kaushal Vikash Kendra</title>
+  <title>Manihari BSDC - Kaushal Vikash Kendra</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      animation: backgroundShift 10s ease-in-out infinite alternate;
+    }
+    @keyframes backgroundShift {
+      0% {
+        background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      }
+      100% {
+        background: linear-gradient(135deg, #ffffff, #e0f7fa);
+      }
     }
     header {
       background: #005f73;
@@ -44,6 +54,9 @@
       background: #94d2bd;
       padding: 50px 20px;
       text-align: center;
+      border-radius: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .hero h1 {
       font-size: 2.5rem;
@@ -59,34 +72,69 @@
       padding: 10px;
       border-radius: 8px;
     }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img, .gallery video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .map-container {
+      padding: 20px;
+      text-align: center;
+    }
+    .map-container iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+      border: 0;
+      border-radius: 10px;
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXrwfKgX4hP92MGb/9e5hS7q0yPZQ0oTZKuYBVPFkWyM3LtcRAKJSjCMv6VQx7oOzG3MSh9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <script>
-    console.log("Website loaded: Nirmali BSDC");
-  </script>
   <header>
-    <h1>Nirmali BSDC</h1>
+    <h1>Manihari BSDC</h1>
     <p>Kaushal Vikash Kendra - Kushal Yuva Program</p>
   </header>
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#courses">Courses</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
   <section class="hero" id="home">
-    <script>console.log("Hero section loaded");</script>
-    <h1>Welcome to Nirmali BSDC</h1>
+    <h1>Welcome to Manihari BSDC</h1>
     <p>Empowering youth with skills for a brighter future.</p>
   </section>
   <section id="about">
-    <script>console.log("About section loaded");</script>
     <h2>About Us</h2>
-    <p>Nirmali BSDC, located in the Nirmali Block Campus, is a certified center under the Kushal Yuva Program (KYP). We focus on skill development and employability enhancement for youth in our region.</p>
+    <p>Manihari BSDC, located in the Katihar District, is a certified center under the Kushal Yuva Program (KYP). We focus on skill development and employability enhancement for youth in our region.</p>
   </section>
   <section id="courses">
-    <script>console.log("Courses section loaded");</script>
     <h2>Our Courses</h2>
     <ul class="skill-list">
       <li>1: Computer & Smartphone Skills</li>
@@ -103,16 +151,33 @@
       <li>12: Go Green Skills</li>
     </ul>
   </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="/mnt/data/Motijhrna%20tour%20with%20sir.webp" alt="Motijharna Tour 1" />
+      <img src="/mnt/data/Motijhrna%20tour%20with%20sir%20(1).webp" alt="Motijharna Tour 2" />
+      <img src="/mnt/data/कुशल%20युवा%20कार्यक्रम%20(KYP)%20में%20आज%20बच्चों%20के%20द्वारा%20शिक्षक%20दिवस%20मनाया%20गया।%20शिक्षक%20दिवस%20की%20हार्दिक%20शुभकामनाएँ!%20%20%23kyp%20%23teachersday2024%20%23batch3%20%23Bihar%20%23SDC%20%23BSDM%20%23teahcer%20%23bscit%20%23bscls%20%23bscss%20%23youth.heic" alt="Teachers Day Celebration" />
+      <video controls>
+        <source src="/mnt/data/#reels%20#challangeaccepted.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
   <section id="contact">
-    <script>console.log("Contact section loaded");</script>
     <h2>Contact Us</h2>
-    <p>Address: Nirmali Block Campus, Kaushal Vikash Kendra</p>
-    <p>Phone: 9534776759, 9341352037</p>
-    <p>Email: anantyadav0085@gmail.com</p>
+    <p>Address: Manihari, Katihar District, Bihar</p>
+    <p>Phone: 8709896170</p>
+    <p>Email: bsdcmanihari@gmail.com</p>
+  </section>
+  <section class="map-container">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps?q=Kaushal+Vikash+Kendra+Manihari&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
   <footer>
-    <script>console.log("Footer loaded");</script>
-    <p>&copy; 2025 Nirmali BSDC. All Rights Reserved.</p>
+    <p>&copy; 2025 Manihari BSDC. All Rights Reserved.</p>
   </footer>
+  <a href="https://wa.me/918709896170" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
